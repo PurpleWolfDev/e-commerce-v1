@@ -1,0 +1,117 @@
+.wrapper {
+    height: 100vh;
+    background: transparent;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body{
+    overflow: hidden;
+    background: url("../IMAGES/contact.jpeg");
+    background-size: 100% 100%;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+}
+.overlay {
+    width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.contact-us {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.contact-us h3,
+p {
+    color: #fff
+}
+
+.address {
+    margin-top: 14px !important;
+    margin-left: 1rem;
+}
+
+.address div {
+    color: #ada599;
+    text-align: left;
+    
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.icons i {
+    font-size: 20px
+}
+
+.forms {
+    padding: 20px
+}
+
+.inputs input {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #eee
+}
+
+.inputs input:focus {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #7B1FA2;
+    box-shadow: none
+}
+
+.inputs textarea {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+    resize: none
+}
+
+.inputs textarea:focus {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #7B1FA2;
+    box-shadow: none;
+    resize: none
+}
+
+.form-control {
+    padding: .375rem .25rem;
+    max-width: 90%;
+    margin-top: 1.5rem;
+}
+@media screen and (max-width: 780px) {
+    #d{
+        display:none;
+    }
+    #fo{
+        width: 80vw;
+        position: absolute;
+        /* top: 50%; */
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@media screen and (max-width: 450px) {
+    #fo{
+        width:90vw;
+    }
+}

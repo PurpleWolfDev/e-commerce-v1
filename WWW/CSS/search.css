@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height:100vh;
+    width: 100vw;
+    /* border: 1px solid black; */
+}
+body{
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.form{
+    height:70px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2666CF;
+    box-shadow: 1px 1px 4px #202020;
+}
+.products-container{
+    height: calc(100% - 80px);
+    width:98%;
+    left: 1%;
+    position: absolute;
+    top:75px;
+    overflow-y:scroll;
+    /* border: 1px solid black; */
+    background: #f2f2f2;
+}
+input{
+    width: 350px;
+    height: 40px;
+    border:none;
+    border-radius: 20px 0 0 20px;
+    outline:none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+}
+body{
+    background: #f2f2f2;
+}
+input:focus{
+    transition-duration: 0.3s;
+}
+input::placeholder{
+    padding-left: -15px;
+    color:grey;
+    font-size:15px;
+}
+.submit {
+    border: none;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    width:80px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit {background-color: #04AA6D;} /* Green */
+  .submit:hover {background-color: #46a049;}
+  
+.card{
+    height: 280px;
+    width:98%;
+    margin-left:1%;
+    /* border: 1px solid black; */
+    display: flex;
+    box-shadow: 1px 1px 4px #777777;
+    background:white;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.card .img{
+    height: 220px;
+    width: 220px;
+    /* border: 1px solid black; */
+}
+.card .text{
+    width: calc(100% - 340px);
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    flex-direction: column;
+}
+.card{
+    cursor: pointer;
+}
+.card .text .head{
+    height: 50px;
+    font-weight: 500;
+    padding-right:20px;
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 0;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 25px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.card .text .price {
+    min-height: 70px;
+    flex-shrink: 0;
+    /* margin-top:10px; */
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+    font-weight: 600;
+    width:99%;
+    /* border: 1px solid blue; */
+}
+.card .text .desc{
+    max-height: 120px;
+    min-height: 119px;
+    flex-shrink: 0;
+    width: 100%;
+    /* border: 1px solid brown; */
+    /* margin-top:10px; */
+    font-size: 15px;
+    display: flex;
+    padding:20px;
+    align-items: center;
+    font-weight: 300;
+}
+.ifr{
+    position: absolute;
+    top:0%;
+    left:0%;
+    height:0px;
+    width:0px;
+    z-index:2;
+}
+@media screen and (max-width: 900px) {
+    .card .text .head{
+        font-size: 20px;
+    }
+    .card .text .price{
+        font-size:18px;
+    }
+    .img{
+        height: 100px !important;
+        width: 100px !important;
+    }
+    .card .text{
+        width: calc(100% - 200px) !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card{
+        flex-direction: column;
+        height: 430px;
+    }
+    .card .text{
+        width: 95% !important;
+        height: 200px;
+    }
+    .img {
+        height: 160px !important;
+        width: 160px !important;
+        margin-top: -20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .input-box{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .input-box{
+        width: 220px;
+    }
+    .submit{
+        width:70px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="../CSS/index.css">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        <script src="../JS/index.js"></script>
+        <script src="../JS/scrollfade.js"></script>
+        <link rel="stylesheet" href="../CSS/about.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{Company Name}</title>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    font-family:  'Poppins', sans-serif;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.footer{
+    background-color: #f2f2f2;
+    height: 100%;
+    width: 100%;
+    color: green;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    /* border: 1px solid darkgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+}
+input{
+    font-size: 16px;
+    padding: 10px;
+}
+.footup{
+    /* margin-top: 50px; */
+    /* border: 1px solid rgb(2, 3, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 100%;
+}
+
+.img{
+    margin-bottom: 15px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    position: relative;
+    height: 100px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsl-des{
+    font-weight: 500;
+    text-align: center;
+}
+
+.emailin{
+    border: 1px solid #999;
+    margin-top: 15px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+    padding: 2px;
+    color:#333;
+    padding-left: 10px;
+}
+
+.submit{
+    margin-top: 10px;
+    border: 2px solid green;
+    background-color: transparent;
+    color: #f2f2f2;
+    font-size: 14px;
+    color:black;
+    border-radius: 15px;
+    /* width: 70px; */
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.emailin:hover{
+    border: 1px solid black;
+    transition-duration: .4s;
+}
+.submit:hover{
+    text-transform: uppercase;
+    transition-duration: .5s;
+    color:white;
+    background: green;
+}
+
+.qlinks-con {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    /* position: absolute; */
+    float: right;
+    right: 30px;
+    width: 200px;
+    /* margin-left: 20vh; */
+}
+
+.qlinks{
+    text-decoration: none;
+    color: #999;
+    font-size: 17px;
+    padding:5px;
+    font-weight: 500;
+    margin: 2px;
+    
+}
+
+.qlinks:hover{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.ql{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.footdown{
+    margin-top: 10px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+}
+
+.fab {
+    color: black;
+    margin: 2px;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.fab:hover{
+    color: green;
+    transition-duration: 0.3s;
+}
+
+.reg{
+    font-size: 18px;
+}
+
+/* i{
+    color: #001a21;
+}
+
+i:hover{
+    color: #fc5c65;
+} */
+
+/** MOBILE VIEW */
+
+@media only screen and (max-width: 570px) {
+    .footer{
+        height: 100vh;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footup{
+        display: flex;
+        flex-direction: column;
+        margin-top: -20px;
+    }
+
+    .sub{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        align-items: center;
+        justify-content: center;
+        /* margin-top: -30px; */
+        width: 90%;
+        height: 300px;
+    }
+
+    .newl{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .footdown{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .newsl-des{
+        text-align:center;
+    }
+    .submit{
+        padding: 10px;
+    }
+    .qlinks-con {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        /* position: absolute; */
+        float: right;
+        right: 30px;
+        width: 200px;
+        /* margin-left: 20vh; */
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+}
+        </style>
+    </head>
+    <body onload="loadBody()">
+        <div class="section-1">
+            <iframe src="landing-section.html" frameBorder="0" class="ifr1"></iframe>
+        </div>
+        <!-- <div class="section-2" id="section-2">Trending Section</div> -->
+        <div class="section-3" id="section-3">
+            <iframe id="meraFrame" src="category.html" scrolling="no" style="height: 100%;width:100%;overflow:hidden;margin:0px;padding:0px;" frameBorder="0"></iframe>
+        </div>
+        <div class="section-5" id="section-5">
+            <iframe src="contact.html" frameBorder="0" style="height:100vh;width:100vw;"></iframe>
+        </div>
+        <div class="section-6" id="section-6">
+            <footer class="footer">
+                <div class="container">
+                    <div class="footup">
+                        <div class="sub">
+                            <div class="img"><big>LOGO</big></div>
+                            <div class="newsl">
+                                <span class="newsl-des">Lorem ipsum dolor sit, amet consectetur adipis<br> elit. Eaque.</span>
+                                <br>
+                                <input type="email" placeholder="E-mail" class="emailin">
+                            </div>
+                            <button class="submit">Submit</button>
+                        </div>
+                        <div class="qlinks-con">
+                            <h4 class="ql">Quick links</h4>
+                            <a href="/" class="qlinks">Home</a>
+                            <a href="/" class="qlinks">Trending</a>
+                            <a href="/" class="qlinks">Search</a>
+                            <a href="/" class="qlinks">Catogries</a>
+                            <a href="/" class="qlinks">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="footdown">
+                        <div class="icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="reg">
+                            <span class="static">©2012-</span><span class="dynamic">2022</span><span class="static"> Purplefoxdevs.tk</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+</body>
+</html>

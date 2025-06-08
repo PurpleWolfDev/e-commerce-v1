@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom Files -->
+    <link rel="stylesheet" href="../CSS/signUp.css" />
+    <script src="../JS/signUp.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account Now!</title>
+</head>
+<body onload="validate()">
+    <div class="container">
+        <form method="post" action="/register">
+            <div class="form-input-wrapper">
+            <span class="head">Sign up</span>
+            <div class="input-group">
+                <input class="name" id="name" type="text" name="name" placeholder="Your Name" required/>
+                <input class="name" id="number" type="number" name="phone" placeholder="Your Phone" required/>
+                <input class="name" id="Address" type="text" name="adress" placeholder="Your Adress" required/>
+                <input class="name" id="password" type="password" name="password" placeholder="Your Passord" required/>
+                <input class="name" id="re-password" type="password" name="rePassword" placeholder="Rewrite Password" required/>
+                <button id="btn">Register</button>
+                <a href="/login">Already Have An Account? Log In.</a>
+            </div>
+            </div>
+            <div class="form-image-wrapper">
+                <div class="img"></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

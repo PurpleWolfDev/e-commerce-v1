@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../JS/profile.js"></script>
+    <link rel="stylesheet" href="../CSS/profile.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+</head>
+<body onload="loadBody()">
+    <div class="container">
+        <div class="head">
+            <div class="back">back Arrow</div>
+            <div class="rest">
+                <a class="link" href="/myCart">My Cart</a>
+                <a class="link" href="/myOrder">My Orders</a>
+            </div>
+        </div>
+        <div class="restBody">
+            <form action="/userProfile" method="post">
+                <div class="header">Edit Information</div>
+                <input id="inp1" name="name" type="text" placeholder="Name" required />
+                <input id="inp2" name="phone" type="number" placeholder="Phone No." required />
+                <input id="inp3" name="password" type="password" placeholder="Password" required />
+                <input id="inp4" name="rePassword" type="password" placeholder="Rewrite Password" required />
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
